@@ -50,3 +50,26 @@ let isLoggedIn = false
 console.log(typeof "Sherock");
 console.log(typeof null)
 console.log(typeof undefined)
+
+
+// Conversion or Operation
+
+let score = 33
+
+console.log(typeof score);
+console.log(typeof(score));
+
+let valueNumber = Number(score);
+console.log(typeof valueNumber);
+console.log(valueNumber);
+
+
+// "33" => 33
+// "33abc" => NaN
+// true => 1; False => 0;
+
+
+let someNumber = 33
+let strinNumber = String(someNumber)
+console.log(someNumber);
+
