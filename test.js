@@ -34,12 +34,12 @@ console.table([accountId, accountEmail, accountPassword, accountCity, accountSta
 console.log(3 + 3); 
 console.log("Sherlock")
 
-let name = "Hitesh"
+let name = "Sherlock"
 let age = 18
 let isLoggedIn = false
 
 // number => 2 to power 53
-// bigint 
+// bigint =>
 // string => ""
 // boolean => true/false
 // null => standalone value 

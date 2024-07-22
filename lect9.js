@@ -33,4 +33,22 @@ const myFunction = function(){
 console.log(typeof scoreValue);
 
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Lect 10 
+
+// Stack(Primitive) and Heap(Non-Primitive)
+
+let myYoutubename = "sherlock-homes.com"
+
+let anotherName = myYoutubename
+anotherName = "chaiAurCode"
+
+console.log(myYoutubename)
+console.log(anotherName)
+
+let userOne{
+    emai: "user@google",
+    UPI: "hitesh@ybl"
+}
+
