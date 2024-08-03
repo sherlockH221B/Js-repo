@@ -41,3 +41,49 @@ function loginUserMessage(username = "User") {
 console.log(loginUserMessage());//not jaar kai pass kelach nai aala asel tar ans. undefined yet aaste.
 
 
+
+
+//++++++++++++++++++++++++++++ Function 2
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1
+}
+console.log(calculateCartPrice(10, 20, 30, 200));
+
+const user = {
+    userName: "Sherlock",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.userName} and price is ${anyobject.prices}`);
+}
+
+handleObject(user)
+
+handleObject({
+    user_Name: "Sam",
+    price: 399
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
