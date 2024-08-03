@@ -42,4 +42,10 @@ console.log(JsUser.greetingTwo());
 //+++++++++++++++++++++++++++++++++++++++++++++
 
 //Object vPart 2
+const tinderUser = new Object()
+const tinderUser = {}
 
+tinderUser.id = "123abc"
+tinderUser.name = "Sammy"
+tinderUser.isLoggedIn = 
+console.log(tinderUser);
