@@ -108,7 +108,117 @@ console.log(Math.floor(Math.random() * 10) + 1);
 //Note : We always use floor not Ceil because using ceil method there is chnace to generate 0
 
 
-//+++++++++++++++++++++++ Video 6 Problem Solving Generate Random Letter +++++++++++++++++++++++++++
+//+++++++++++++++++++++++ Video 6 Problem Solving Generate Random Letter ++++++++++++++++++++++++++
+
+//write a problem to generate random letter 
+
+"Tushar"
+console.log("tushar".charAt());
+console.log(Math.floor(Math.random() * 4 + 1));
+
+
+const anyName = "Jonathan";
+console.log(anyName.charAt(Math.floor(Math.random() * anyName.length)));
+
+
+//+++++++++++++++++++++++ Video 07 If Statement +++++++++++++++++++
+
+// Conditional 
+// let soup = "chiken noodle soup"
+// let reply;
+// if (soup) {
+//     reply = `Here's your order of ${soup}`;    
+// }
+// else{
+//     reply = "Sorry We're runout."
+// }
+// console.log(reply);
+
+//+++++++++++++++++Else IF++++++++++++++++++++
+let customerIsBanned = false;
+let soup = "Hot & Sour";
+let crackers = true;
+let reply;
+
+if (customerIsBanned) {
+    reply = "No Soup for you!";
+} else if(soup && crackers){
+    reply = `Here is your order of ${soup} & crackers`;
+} else if(soup ){
+    reply = `Here is your order of ${soup}`;
+} else {
+    reply = "Sorry we are out of Soup!";
+}
+console.log(reply);
+
+//++++++++++++++++++++Decision Tree+++++++++++++++++++++++++++++++
+
+if (playerone === computer) {
+        //Tie Game
+} else if(playerone == "rock") {
+    if (computer === "paper") {
+        //computer wins
+    } else {
+        //player wins
+    }   
+} else if (playerone === sisor) {
+    if (computer === "paper") {
+        // Player one wins
+    } else {
+        // Computer wins
+    }
+
+} else if (playerone === paper) {
+    if (computer === "sisor") {
+        //Computer wins
+    } else {
+        // Player One wins
+    }
+}
+
+
+
+
+
+//+++++++++++++++++++++++ Video 08 Statement 
+
+//Syntax of switch statement
+
+
+switch (expressionOrValue) {
+    case value1:
+        
+        //Run This Code
+        break;
+    case value2:
+        
+        //Run This Code
+        break;
+
+    default:
+        break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
