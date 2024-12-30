@@ -17,7 +17,7 @@
         //Document . write
         //document.write("<h1>Hello World</h1>");
 
-//++++++++++++++++++++++++++++++ Addition on 2 No. two way Static and Dynamic +++++++++++++++++=
+//++++++++++++++++++++++++++++++ Addition on 2 No. two way Static and Dynamic ++++++++++++++
 
     //Static
 
@@ -31,7 +31,8 @@
 
         //let a = prompt("Plzz add first number", "");
         //let b = prompt("plzz add second number", "");
-        //let c = parseInt(a) + parseInt(b); //ParseInt is used because we are taking input from user in string format
+        //let c = parseInt(a) + parseInt(b); 
+        // //ParseInt is used because we are taking input from user in string format
         //console.log("The Sum Of  " +a + " and " +b+ " = " +c);
 
 //++++++++++++++++++++++++++++++ Square Root ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -41,7 +42,7 @@
         //let b = Math.sqrt(a);
         //console.log(b);
 
-//++++++++++++++++++++++++++++++ Area Of Triangle ++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++ Area Of Triangle ++++++++++++++++++++++++++++++++++++++++
 
         //let base = prompt("Plzz add Base ", "");
         //let height = prompt("Plzz add height ", "");
@@ -49,7 +50,7 @@
         //alert(area);
         //console.log(area);
         
-//++++++++++++++++++++++++++++++ Swapping Of 2 Number ++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++ Swapping Of 2 Number +++++++++++++++++++++++++++++++++++++++++
 
 //With Temp
 
@@ -63,86 +64,140 @@
         
 //Without Temp
 
-        let a = parseInt(prompt("give value of a", ""));//15
-        let b = parseInt(prompt("please give value of b", ""));//22
-        console.log(`The Value of a is ${a}, The Value of b is ${b}`);
-        a = a + b ;//37
-        b = a - b ;//15
-        a = a - b ;//2215
-        console.log(`The Value of a is ${a}, The Value of b is ${b}`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       // let a = parseInt(prompt("give value of a", ""));//15
+       // let b = parseInt(prompt("please give value of b", ""));//22
+       // console.log(`The Value of a is ${a}, The Value of b is ${b}`);
+       // a = a + b ;//37
+       // b = a - b ;//15
+       // a = a - b ;//2215
+       // console.log(`The Value of a is ${a}, The Value of b is ${b}`);
+
+
+//++++++++++++++++++++++++++++++ Conversion Of Kms to Miles +++++++++++++++++++++++++++++++++++++
+        // One Way 
+        //let a = parseInt(prompt("Give value of the KM which you have to Convert Into Miles ", ""));
+        //console.log(`The Value of Miles is ${a * 0.621371}`);
+        
+        //Using Function 
+        function convert() {
+            let kms = document.getElementById('data').value;
+            const factor = 0.621371
+            let miles = kms * factor;
+            document.getElementById('result').innerText = `${miles} is the Miles`;
+        }
+
+        function celConvert() {
+            let c = document.getElementById('cel').value;
+            let f = (c * 1.8) + 32;
+            document.getElementById('convertedFah').innerText = `${f} F is the Converted Value`;
+        }
+
+        function numConvert() {
+            let value = document.getElementById('num').value;
+            //let res = Math.sign(val);
+            if (value > 0){
+                res = ` ${value} is positive number`;
+            }
+            else if(value < 0){
+                res = ` ${value} is Negative number`;
+            }
+            else if(value == 0){
+                res = ` ${value} is Zero`;
+            }
+            else{
+                res = ` ${value} is Not a Number`;
+            }
+            document.getElementById('res').innerText = res;
+        }
+
+
+        //Random Number Generator Using Math.Random
+        // Math.random() * (HighestNumber - LowestNumber) + lowestNumber;
+        let x = Math.random();
+        console.log(x);
+        //x = x * (10 - 1) + 1;
+        //console.log("After calculation " + x);
+        x = Math.floor((x * (10)) + 1);
+        console.log("Floor Calculation " + x);
+        y = Math.floor(x);
+        console.log(y);
+
+
+        //Even Odd using If Else & turnery Operator
+        let E = 561;
+        if (E%2 == 0){
+            console.log(`The Number is ${E} Even`);
+        }
+        else{
+            console.log(`The Number is ${E} Odd`);
+        }
+
+        //Even Odd using turnery Operator
+        let T = 2121;
+        z = T%2 == 0 ? "Even" : "Odd";
+        console.log(`${T} is an ${z} number`);
+        
+        //Prime Number 
+        let number = prompt("Please Entre a Number ")
+        if(Number == 1){
+            console.log(`The One Is Neither Positive Nor Negative ${Number} `);
+        }else if(number <= 0){
+            console.log(`Its Not ${number} Valid Number range`);
+        }else{
+            for(let i = 2; i<=number; i++){
+                if(number%i == 0){
+                    var resu = `${number} is not a prime number` ;
+                    break;
+                }else{
+                    var resu = `${number} is a prime number`;
+                }
+            }
+            console.log(resu);
+        }
+
+
+
+       
+
+
+
+        
 
     </script>
 </head>
 <body>
     
+<!-- ++++++++++++++++++++++ Conversion Of Kms to Miles ++++++++++++++++++++++++ -->
+    <input type="number" name="" step="any" id="data"/> KMS 
+    <button onclick="convert()">Convert</button> Miles
+    <h1 id="result"></h1>
+
+
+
+<!-- +++++++++++++++++++++ Conversion Of Celsius to Fahrenheit f = (C*1.8) + 32++++++++++++++++ -->
+    <input type="" name="" id="cel"/> C
+    </br>
+    <button onclick="celConvert()">Convert</button>
+    <h1 id="convertedFah"></h1>
+
+
+
+<!-- ++++++++++++++++++ Conversion Of no. is Positive negative or zero ++++++++++++++++ -->
+    <input type="" name="" id="num"/>
+    </br>
+    <button onclick="numConvert()">Check</button>
+    <h1 id="res"></h1>
+
+
+
+<!-- ++++++++++++++++++  ++++++++++++++++ -->
+    
+
+
+
+
+
+
+
 </body>
 </html>
